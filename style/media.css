@@ -1,0 +1,37 @@
+@import url("mobile.css") screen;
+
+@import url("tab.css") screen;
+
+@import url("desktop.css") screen;
+
+
+/*Header (flex)*/
+header {
+    display: flex;
+}
+header > img {
+    order: -1;
+}
+
+/*Main (grid)*/
+main {
+    display: grid;
+}
+article {
+    justify-self: center;
+}
+article:nth-of-type(1) {
+    grid-area: carrousel;
+    width: 100%;
+}
+article:nth-of-type(2) {
+    grid-area: images;
+}
+article:nth-of-type(3) {
+    grid-area: tutos;
+}
+article:nth-of-type(4) {
+    grid-area: workshop;
+}
+
+/*Footer*/

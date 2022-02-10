@@ -1,0 +1,26 @@
+@media screen and (min-width: 1200px) {
+    nav {
+        top: 0;
+        left: 0;
+        width: 30vw;
+    }
+    label {
+        display: none;
+    }
+    header, main, footer {
+        margin-left: 30vw;
+        max-width: 70vw;
+    }
+
+    rect {
+        transform: scale(1, .4)
+    }
+    
+    button {
+        opacity: 5%;
+        transition: 1.5s;
+    }
+    button:hover {
+        opacity: 100%;
+    }
+}

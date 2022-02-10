@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+    #socialheader {
+        display: inline;
+    }
+    #socialfooter {
+        display: none;
+    }
+    nav{
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 992px){
+    main {
+        grid-template-areas: 
+            "carrousel carrousel carrousel"
+            "images workshop tutos";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav{
+        width: 35vw;
+    }
+}

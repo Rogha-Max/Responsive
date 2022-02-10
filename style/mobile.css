@@ -1,0 +1,35 @@
+.raizo{
+    flex-wrap: wrap;
+    max-width: 30vw;
+}
+#socialheader {
+    display: none;
+}
+
+/*portrait*/
+header{
+    flex-direction: row;
+}
+main {
+    grid-template-areas: 
+        "carrousel"
+        "images"
+        "tutos"
+        "workshop";
+    grid-template-columns: 1fr;
+}
+nav{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*paysage*/
+@media screen and (min-width: 480px){
+    main {
+        grid-template-areas: 
+            "carrousel carrousel"
+            "images workshop"
+            "tutos .";
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+header {
+    height: 15vh;
+}
+header > img {
+    width: 75vw;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+header > img {
+    width: 40vw;
+}
+#logosite{
+    display: block;
+}
+/*Réseaux*/
+.raizo {
+    padding: 1vh 3vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.raizo img {
+    max-width: 10vw;
+}
+/*Menu*/
+label span {
+    display: block;
+}
+#trigramme {
+    width: 7vw;
+    height: 3vh;
+    border: 1px solid black;
+}
+.barre {
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    margin: 5px;
+    border-radius: 10px;
+}
+nav {
+    position: fixed;
+    top: -100vh;
+    right: -100vw;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+}
+input:checked ~ nav {
+    top: 0;
+    right: 0;
+}
+input {
+    display: none;
+}
+label {
+    z-index: 99;
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+}
+
+/*main*/
+main{
+    min-height: 75vh;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    width: 50px;
+}
+#carousel > img {
+    object-fit: cover;
+    height: 30vh;
+    display: none;
+}
+
+.carousel_nav , svg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: flex-end;
+    height: 25px;
+}
+svg , .carousel_nav > a{
+    max-width: 25px;
+}
+
+
+article {
+    padding: 10%;
+}
+article > img {
+    object-fit: cover;
+    height: 25vh;
+}
+
+/*footer*/
+footer {
+    min-height: 10vh;
+    background-color: #c6c6c6
+}
